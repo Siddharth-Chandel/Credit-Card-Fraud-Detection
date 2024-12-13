@@ -11,7 +11,7 @@ from matplotlib import pyplot as plt
 import seaborn as sns
 
 # Load dataset (replace with your actual dataset)
-df = pd.read_csv(r'data\card_transdata.csv')
+df = pd.read_csv(r'data/card_transdata.csv')
 
 # Data analysis: visualize fraud distribution before SMOTE
 plt.figure(figsize=(6, 4))
@@ -19,7 +19,7 @@ sns.countplot(x='fraud', data=df)
 plt.title('Distribution of Fraudulent vs Genuine Transactions (Before SMOTE)')
 plt.xlabel('Fraudulent (1) vs Genuine (0)')
 plt.ylabel('Count')
-plt.savefig(r'img\fraud_distribution_before_smote.png')
+plt.savefig(r'img/fraud_distribution_before_smote.png')
 plt.show()
 
 # Preprocess data
@@ -36,7 +36,7 @@ sns.countplot(x=y_res)  # Using the resampled target variable
 plt.title('Distribution of Fraudulent vs Genuine Transactions (After SMOTE)')
 plt.xlabel('Fraudulent (1) vs Genuine (0)')
 plt.ylabel('Count')
-plt.savefig(r'img\fraud_distribution_after_smote.png')
+plt.savefig(r'img/fraud_distribution_after_smote.png')
 plt.show()
 
 # Split the dataset
@@ -52,7 +52,7 @@ plt.figure(figsize=(6, 4))
 corr = pd.DataFrame(X_train).corr()  # Correlation matrix of training features
 sns.heatmap(corr, annot=True, cmap='coolwarm', fmt='.2f', linewidths=0.5)
 plt.title('Feature Correlation Heatmap')
-plt.savefig(r'img\feature_correlation_heatmap.png')
+plt.savefig(r'img/feature_correlation_heatmap.png')
 plt.show()
 
 # Define FNN model
@@ -85,7 +85,7 @@ sns.heatmap(cm, annot=True, fmt='g', cmap='Blues')
 plt.title('Confusion Matrix')
 plt.xlabel('Predicted')
 plt.ylabel('True')
-plt.savefig(r'img\confusion_matrix.png')
+plt.savefig(r'img/confusion_matrix.png')
 plt.show()
 
 # Plot training & validation accuracy
@@ -108,10 +108,10 @@ plt.ylabel('Loss')
 plt.legend()
 
 plt.tight_layout()
-plt.savefig(r'img\training_plot.png')
+plt.savefig(r'img/training_plot.png')
 
 # Show the plot
 plt.show()
 
 # Save the model
-model.save(r"model\detector.keras")
+model.save(r"model/detector.keras")
