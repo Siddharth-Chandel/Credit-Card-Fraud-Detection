@@ -68,8 +68,8 @@ dist_last = st.number_input("2",
 st.write("Ratio to median purchase price")
 ratio = st.number_input("3",
     label_visibility="collapsed",
-    max_value=int(max(data.ratio_to_median_purchase_price)+1),
-    min_value=0,
+    max_value=int(max(data.ratio_to_median_purchase_price)+1)+0.0,
+    min_value=0.00,
     step=0.01
 )
 st.write("Repeat retailer")
