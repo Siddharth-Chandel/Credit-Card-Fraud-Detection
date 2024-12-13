@@ -65,7 +65,8 @@ It contains anonymized features and transaction labels:
   - **Classification Report**
 
 ## Demo
-- Demo link: [credit-card-fraud-detection-ml.streamlit.app](https://credit-card-fraud-detection-ml.streamlit.app/
+- Demo link: [credit-card-fraud-detection-ml.streamlit.app](https://credit-card-fraud-detection-ml.streamlit.app/)
+
 ## Contributing
 
 Contributions are welcome!  
