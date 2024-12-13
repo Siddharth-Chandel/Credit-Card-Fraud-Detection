@@ -69,7 +69,8 @@ st.write("Ratio to median purchase price")
 ratio = st.number_input("3",
     label_visibility="collapsed",
     max_value=int(max(data.ratio_to_median_purchase_price)+1),
-    min_value=0
+    min_value=0,
+    step=0.01
 )
 st.write("Repeat retailer")
 retailer = st.selectbox("4",
