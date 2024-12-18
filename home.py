@@ -24,15 +24,15 @@ with st.expander("Correlation Matrix"):
     st.write("The heatmap shows that the 'Amount' feature is highly correlated with the 'Time'")
 st.image(Image.open(r"img/feature_correlation_heatmap.png"))
 
+st.subheader("The class distribution of the dataset is as follows:")
 with st.expander("Class Distributionst Before SMOTE"):
-    st.write("The class distribution of the dataset is as follows:")
-    st.write("The fraud distribution before SMOTE is shown in the above plot.")
+    st.write("The fraud distribution before SMOTE is shown in the below plot.")
     st.write("The plot shows that the fraud class is highly imbalanced")
     st.write("The dataset is imbalanced with 0.17% fraud transactions.")
 st.image(Image.open(r"img/fraud_distribution_before_smote.png"))
 
 with st.expander("Class Distributionst After SMOTE"):
-    st.write("The fraud distribution after SMOTE is shown in the above plot.")
+    st.write("The fraud distribution after SMOTE is shown in the below plot.")
     st.write("The plot shows that the fraud class is now more balanced")
 st.image(Image.open(r"img/fraud_distribution_after_smote.png"))
 
